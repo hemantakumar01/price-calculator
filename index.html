@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profit Margin Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Profit Margin Calculator</h1>
+      <form id="profitForm">
+        <label for="productCost">Product Cost (₹):</label>
+        <input type="number" id="productCost" required />
+
+        <label for="adExpenses">Ad Expenses per Product (₹):</label>
+        <input type="number" id="adExpenses" required />
+
+        <label for="operationalCosts">Operational Costs per Product (₹):</label>
+        <input type="number" id="operationalCosts" required />
+
+        <label for="returnRate">Return Rate (%):</label>
+        <input type="number" id="returnRate" required />
+
+        <label for="desiredProfitMargin">Desired Profit Margin (%):</label>
+        <input type="number" id="desiredProfitMargin" required />
+
+        <button type="button" onclick="calculateProfit()">Calculate</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
